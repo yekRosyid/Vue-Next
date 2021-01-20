@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import CourseList from "./components/CourseList";
-import Calendar from "./components/Calendar";
-import Home from "./components/Home";
+import CourseList from "./pages/CourseList";
+import Calendar from "./pages/Calendar";
+import Home from "./pages/Home";
+import Markdown from "./pages/Markdown";
 
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
   {
     path: "/calendar",
     component: Calendar,
+  },
+  {
+    path: "/markdown",
+    component: Markdown,
   },
 ];
 
